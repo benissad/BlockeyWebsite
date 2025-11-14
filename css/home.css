@@ -17,6 +17,15 @@
   font-size: 0.98rem;
 }
 
+.hero-left {
+  text-align: center;
+}
+
+.hero-left-inner {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
 .hero-buttons {
   display: flex;
   gap: 0.75rem;
@@ -35,10 +44,14 @@
   gap: 0.5rem;
 }
 
+.recent-scores-card {
+  margin-top: 1.25rem;
+}
+
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 */
+  padding-top: 56.25%;
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.75);
