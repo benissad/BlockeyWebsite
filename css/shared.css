@@ -1,0 +1,196 @@
+:root {
+  --navy: #0b1020;
+  --navy-dark: #111827;
+  --navy-soft: #1f2937;
+  --white: #f9fafb;
+  --muted-white: #e5e7eb;
+  --yellow: #facc15;
+  --yellow-soft: #fcd34d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  background-color: var(--navy-dark);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.1);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.nav-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 999px;
+  color: var(--muted-white);
+}
+
+.nav-link:hover {
+  background-color: var(--navy-soft);
+  color: var(--white);
+}
+
+.nav-link-active {
+  background-color: var(--yellow);
+  color: #111827;
+  font-weight: 600;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.section {
+  margin-top: 2.5rem;
+}
+
+.section-header h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.4rem;
+}
+
+.section-header p {
+  margin: 0;
+  color: var(--muted-white);
+  font-size: 0.95rem;
+}
+
+.card {
+  background-color: var(--navy-dark);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(107, 114, 128, 0.8);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.55);
+  border-color: var(--yellow-soft);
+}
+
+.card-title {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.05rem;
+}
+
+.card-text {
+  margin: 0;
+  color: var(--muted-white);
+  font-size: 0.9rem;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--yellow-soft);
+}
+
+.card-link:hover {
+  color: var(--yellow);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--yellow);
+  color: #111827;
+}
+
+.btn-primary:hover {
+  background-color: var(--yellow-soft);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--muted-white);
+  color: var(--muted-white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--navy-soft);
+  border-color: var(--yellow-soft);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid rgba(55, 65, 81, 0.8);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.data-table thead {
+  background-color: var(--navy-soft);
+}
+
+.site-footer {
+  margin-top: 3rem;
+  border-top: 1px solid rgba(55, 65, 81, 0.8);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted-white);
+}
