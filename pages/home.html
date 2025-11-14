@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Blockey Sports Network</title>
+  <link rel="icon" type="image/png" href="../assets/BSN/BSN.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/shared.css" />
   <link rel="stylesheet" href="../css/home.css" />
@@ -12,10 +13,11 @@
     <nav class="navbar">
       <div class="nav-left">
         <img src="../assets/BSN/BSN.png" alt="Blockey Sports logo" class="nav-logo" />
-        <span class="nav-title">Blockey Sports</span>
+        <span class="nav-title">Blockey Sports Network</span>
       </div>
       <div class="nav-links">
         <a href="./home.html" class="nav-link nav-link-active">Home</a>
+        <a href="./info.html" class="nav-link">Info</a>
         <a href="./stats.html" class="nav-link">Player Stats</a>
         <a href="./teams.html" class="nav-link">Teams</a>
       </div>
@@ -31,32 +33,10 @@
           all in one place.
         </p>
 
-        <div class="hero-buttons">
-          <a
-            class="btn btn-primary"
-            href="https://www.youtube.com/@BlockeySports"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Watch Latest Stream
-          </a>
-          <a
-            class="btn btn-secondary"
-            href="./stats.html"
-          >
-            View Full Stats
-          </a>
-        </div>
-
-        <p class="hero-note">
-          Covering 3 leagues · Live games, standings, and detailed stat tracking powered by Google Sheets.
-        </p>
-      </div>
-
       <div class="hero-right">
         <div class="video-wrapper">
           <iframe
-            src="https://www.youtube.com/embed?listType=user_uploads&list=BlockeySports"
+            src="https://www.youtube.com/embed/live_stream?channel=UCwBif-dDfWxXLFgvhrULY3Q"
             title="Blockey Sports recent games"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -64,42 +44,39 @@
           ></iframe>
         </div>
         <p class="video-caption">
-          Recent matches from the Blockey Sports Network YouTube channel.
+          Most recent livestream from the Blockey Sports Network YouTube channel.
         </p>
       </div>
     </section>
 
     <section class="section">
       <div class="section-header">
-        <h2>Leagues</h2>
-        <p>Jump into any league to see schedules, standings, and stats.</p>
+        <h2>Hockey Leagues</h2>
+        <p>Schedule, Standings, Teams, and stats for each league.</p>
       </div>
 
       <div class="league-grid">
-        <article class="card league-card">
-          <h3 class="card-title">BHL</h3>
-          <p class="card-text">
+        <a href="./BHL.html" class="card league-card">
+            <h3 class="card-title">BHL</h3>
+            <p class="card-text">
             The main blockey hockey league.
-          </p>
-          <a href="./BHL.html" class="card-link">View League &rarr;</a>
-        </article>
+            </p>
+        </a>
 
-        <article class="card league-card">
-          <h3 class="card-title">NAMHL</h3>
-          <p class="card-text">
+        <a href="./NAMHL.html" class="card league-card">
+            <h3 class="card-title">NAMHL</h3>
+            <p class="card-text">
             The intermediary blockey hockey league.
-          </p>
-          <a href="./NAMHL.html" class="card-link">View League &rarr;</a>
-        </article>
+            </p>
+        </a>
 
-        <article class="card league-card">
-          <h3 class="card-title">JBHL</h3>
-          <p class="card-text">
+        <a href="./JBHL.html" class="card league-card">
+            <h3 class="card-title">JBHL</h3>
+            <p class="card-text">
             The junior blockey hockey league.
-          </p>
-          <a href="./JBHL.html" class="card-link">View League &rarr;</a>
-        </article>
-      </div>
+            </p>
+        </a>
+        </div>
     </section>
 
     <section class="section">
@@ -144,8 +121,8 @@
 
     <section class="section">
       <div class="section-header">
-        <h2>From X (Blockey Sports)</h2>
-        <p>Latest updates and media posted by the league.</p>
+        <h2>Media Posts</h2>
+        <p>Recent posts from teams in the Blockey Sports Network.</p>
       </div>
 
       <div class="card twitter-card">
@@ -153,14 +130,13 @@
           class="twitter-timeline"
           data-theme="dark"
           data-chrome="noheader nofooter noborders"
-          data-tweet-limit="3"
-          href="https://twitter.com/BlockeySportsMC"
+          data-tweet-limit="5"
+          href="https://x.com/i/lists/1989460616260747709"
         >
-          Tweets by BlockeySportsMC
+          Media from BHL teams on X
         </a>
       </div>
     </section>
-
 
     <section class="section section-bottom">
       <div class="section-header">
@@ -193,9 +169,18 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>Blockey Sports &middot; Powered by community leagues and Google Sheets data.</p>
-  </footer>
+<footer class="site-footer">
+  <p>
+    Blockey Sports Discord &middot;
+    <a
+      href="https://discord.gg/kvg3DrxYjc"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Join the server
+    </a>
+  </p>
+</footer>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
