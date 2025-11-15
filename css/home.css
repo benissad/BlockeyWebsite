@@ -30,7 +30,7 @@
 
 .hero-video-card {
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
   background-color: var(--navy-dark);
   border-radius: 0.75rem;
   overflow: hidden;

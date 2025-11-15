@@ -11,7 +11,6 @@
 <body>
   <div class="scores-bar">
     <div class="scores-inner">
-      <label for="league-select" class="scores-label">League</label>
       <select id="league-select" class="scores-select">
         <option value="BHL">BHL</option>
         <option value="NAMHL">NAMHL</option>
@@ -21,9 +20,41 @@
       </select>
 
       <div class="scores-scroll">
-        <div class="score-pill">BHL · Team A 3–2 Team B</div>
-        <div class="score-pill">NAMHL · Team C 1–4 Team D</div>
-        <div class="score-pill">JBHL · Team E 2–2 Team F</div>
+        <div class="score-card">
+          <div class="score-status">FINAL</div>
+          <div class="score-row">
+            <span class="score-team">Team A</span>
+            <span class="score-value">3</span>
+          </div>
+          <div class="score-row">
+            <span class="score-team">Team B</span>
+            <span class="score-value">2</span>
+          </div>
+        </div>
+
+        <div class="score-card">
+          <div class="score-status">FINAL</div>
+          <div class="score-row">
+            <span class="score-team">Team C</span>
+            <span class="score-value">1</span>
+          </div>
+          <div class="score-row">
+            <span class="score-team">Team D</span>
+            <span class="score-value">4</span>
+          </div>
+        </div>
+
+        <div class="score-card">
+          <div class="score-status">FINAL</div>
+          <div class="score-row">
+            <span class="score-team">Team E</span>
+            <span class="score-value">2</span>
+          </div>
+          <div class="score-row">
+            <span class="score-team">Team F</span>
+            <span class="score-value">2</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -72,7 +103,7 @@
     <div class="hero-header">
       <h1 class="hero-title">The Blockey Sports Hub</h1>
       <p class="hero-subtitle">
-        Track every league, follow your favorite players, and rewatch the latest game weeks, all in one place.
+        Track every team, game, and stat, all in one place.
       </p>
     </div>
 

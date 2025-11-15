@@ -16,7 +16,7 @@
 }
 
 .scores-bar {
-  background-color: var(--navy); /* same as main background */
+  background-color: var(--navy);
   border-bottom: 1px solid rgba(148, 163, 184, 0.4);
   font-size: 0.82rem;
   color: var(--muted-white);
@@ -25,9 +25,9 @@
 .scores-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.35rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 0.75rem;
 }
 
@@ -43,13 +43,15 @@
   color: var(--muted-white);
   border-radius: 999px;
   border: 1px solid rgba(75, 85, 99, 0.9);
-  padding: 0.2rem 0.8rem;
+  padding: 0.25rem 0.9rem;
   font-size: 0.8rem;
+  height: fit-content;
+  align-self: center;
 }
 
 .scores-scroll {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.75rem;
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -58,12 +60,42 @@
   display: none;
 }
 
-.score-pill {
-  white-space: nowrap;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  background-color: rgba(15, 23, 42, 0.9);
+.score-card {
+  min-width: 160px;
+  background-color: var(--navy-dark);
+  border-radius: 0.5rem;
   border: 1px solid rgba(75, 85, 99, 0.9);
+  padding: 0.35rem 0.6rem 0.5rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.score-status {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--yellow-soft);
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.score-team {
+  max-width: 110px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.score-value {
+  font-weight: 700;
+  margin-left: 0.35rem;
 }
 
 body {
