@@ -1,8 +1,8 @@
 .hero {
-  margin-top: 2rem;
+  margin-top: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .hero-title {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.4rem 0;
   font-size: 2rem;
 }
 
@@ -24,10 +24,41 @@
 
 .hero-body {
   width: 100%;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 2rem;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-video-card {
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--navy-dark);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
+}
+
+.hero-video-top {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.hero-video-top iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-video-meta {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted-white);
+  background-color: var(--navy-soft);
+  border-top: 1px solid rgba(55, 65, 81, 0.9);
 }
 
 .hero-left {
