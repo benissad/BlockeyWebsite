@@ -82,13 +82,13 @@ a {
 }
 
 .page {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 2rem 1.25rem 3rem 1.25rem;
 }
 
 .section {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 }
 
 .section-header {
@@ -112,7 +112,11 @@ a {
   border-radius: 0.75rem;
   padding: 1rem 1.25rem;
   border: 1px solid rgba(107, 114, 128, 0.8);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, outline 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    outline 0.15s ease;
 }
 
 .card:hover {
@@ -134,49 +138,6 @@ a {
   font-size: 0.9rem;
 }
 
-.card-link {
-  display: inline-block;
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
-  color: var(--yellow-soft);
-}
-
-.card-link:hover {
-  color: var(--yellow);
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  padding: 0.55rem 1.2rem;
-  font-size: 0.95rem;
-  font-weight: 500;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: var(--yellow);
-  color: #111827;
-}
-
-.btn-primary:hover {
-  background-color: var(--yellow-soft);
-}
-
-.btn-secondary {
-  background-color: transparent;
-  border: 1px solid var(--muted-white);
-  color: var(--muted-white);
-}
-
-.btn-secondary:hover {
-  background-color: var(--navy-soft);
-  border-color: var(--yellow-soft);
-}
-
 .data-table {
   width: 100%;
   border-collapse: collapse;
@@ -196,11 +157,10 @@ a {
 
 .site-footer {
   margin-top: 3rem;
-  padding: 1.5rem 0 1.25rem 0;
+  padding: 1.25rem 0 1rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center;
   color: var(--muted-white);
-  font-size: 0.9rem;
 }
 
 .footer-links {
@@ -208,14 +168,15 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 0.75rem;
+  column-gap: 0.5rem;
+  row-gap: 0.35rem;
+  font-size: 0.82rem;
 }
 
 .footer-links a {
   text-decoration: none;
   color: var(--muted-white);
-  font-weight: 500;
+  font-weight: 400;
   transition: color 0.2s ease;
 }
 
@@ -223,8 +184,15 @@ a {
   color: var(--yellow-soft);
 }
 
+.footer-dot {
+  color: var(--muted-white);
+  opacity: 0.7;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
 .footer-credit {
-  margin: 0;
-  font-size: 0.85rem;
-  opacity: 0.8;
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  opacity: 0.65;
 }

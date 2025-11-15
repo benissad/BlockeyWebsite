@@ -25,15 +25,18 @@
   </header>
 
   <main class="page">
-    <section class="hero">
+  <section class="hero">
+    <div class="hero-header">
+      <h1 class="hero-title">The Blockey Sports Hub</h1>
+      <p class="hero-subtitle">
+        Track every league, follow your favorite players, and rewatch the latest game weeks,
+        all in one place.
+      </p>
+    </div>
+
+    <div class="hero-body">
       <div class="hero-left">
         <div class="hero-left-inner">
-          <h1 class="hero-title">The Blockey Sports Hub</h1>
-          <p class="hero-subtitle">
-            Track every league, follow your favorite players, and rewatch the latest game weeks,
-            all in one place.
-          </p>
-
           <div class="card recent-scores-card">
             <h2 class="card-title">Recent Scores</h2>
             <p class="card-text">
@@ -52,12 +55,14 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
+
+          <div class="video-overlay">
+            <span>Most recent Blockey Sports Network stream.</span>
+          </div>
         </div>
-        <p class="video-caption">
-          Most recent uploads from the Blockey Sports Network YouTube channel.
-        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
     <section class="section">
       <div class="section-header">
@@ -67,26 +72,94 @@
 
       <div class="league-grid">
         <a href="./BHL.html" class="card league-card">
-            <h3 class="card-title">BHL</h3>
-            <p class="card-text">
-            The main blockey hockey league.
-            </p>
+          <div class="league-card-inner">
+            <img
+              src="../assets/BHL/BHL.png"
+              alt="BHL logo"
+              class="league-logo"
+            />
+            <div class="league-text">
+              <h3 class="card-title">BHL</h3>
+              <p class="card-text">
+                The Blockey Hockey League.
+              </p>
+            </div>
+          </div>
         </a>
 
         <a href="./NAMHL.html" class="card league-card">
-            <h3 class="card-title">NAMHL</h3>
-            <p class="card-text">
-            The intermediary blockey hockey league.
-            </p>
+          <div class="league-card-inner">
+             <img
+              src="../assets/NAMHL/NAMHL.png"
+              alt="NAMHL logo"
+              class="league-logo"
+            />
+            <div class="league-text">
+              <h3 class="card-title">NAMHL</h3>
+              <p class="card-text">
+                The North American Minecraft Hockey League.
+              </p>
+            </div>
+          </div>
         </a>
 
         <a href="./JBHL.html" class="card league-card">
-            <h3 class="card-title">JBHL</h3>
-            <p class="card-text">
-            The junior blockey hockey league.
-            </p>
+          <div class="league-card-inner">
+            <img
+              src="../assets/JBHL/JBHL.png"
+              alt="JBHL logo"
+              class="league-logo"
+            />
+            <div class="league-text">
+              <h3 class="card-title">JBHL</h3>
+              <p class="card-text">
+                The Junior Blockey Hockey League.
+              </p>
+            </div>
+          </div>
         </a>
-        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Lacrosse Leagues</h2>
+        <p>Schedule, Standings, Teams, and stats for each league.</p>
+      </div>
+
+      <div class="league-grid">
+        <a href="./BLL.html" class="card league-card">
+          <div class="league-card-inner">
+            <img
+              src="../assets/BLL/BLL.png"
+              alt="BLL logo"
+              class="league-logo"
+            />
+            <div class="league-text">
+              <h3 class="card-title">BLL</h3>
+              <p class="card-text">
+                The Blockey Lacrosse League.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./JBLL.html" class="card league-card">
+          <div class="league-card-inner">
+             <img
+              src="../assets/JBLL/JBLL.png"
+              alt="JBLL logo"
+              class="league-logo"
+            />
+            <div class="league-text">
+              <h3 class="card-title">JBLL</h3>
+              <p class="card-text">
+                The Junior Blockey Lacrosse League.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
 
     <section class="section">
@@ -136,7 +209,7 @@
       </div>
 
       <div class="card twitter-card">
-        <iframe
+        <a
           class="twitter-timeline"
           data-theme="dark"
           data-chrome="noheader nofooter noborders"
@@ -144,50 +217,39 @@
           href="https://twitter.com/i/lists/1989460616260747709"
         >
           Media from BHL teams on X
-      </iframe>
+        </a>
       </div>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </section>
   </main>
 
 <footer class="site-footer">
   <div class="footer-links">
-    <a 
-      href="https://discord.gg/kvg3DrxYjc" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
+
+    <a href="https://discord.gg/kvg3DrxYjc" target="_blank" rel="noopener noreferrer">
       Blockey Hockey Discord
     </a>
+    <span class="footer-dot">·</span>
 
-    <a 
-      href="https://discord.gg/NY85RJrXs9" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
+    <a href="https://discord.gg/NY85RJrXs9" target="_blank" rel="noopener noreferrer">
       NAMHL Discord
     </a>
+    <span class="footer-dot">·</span>
 
-    <a 
-      href="https://discord.gg/3623kgbmV4" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
+    <a href="https://discord.gg/3623kgbmV4" target="_blank" rel="noopener noreferrer">
       Junior Blockey Hockey Discord
     </a>
+    <span class="footer-dot">·</span>
 
-    <a 
-      href="https://discord.gg/tqRNbrVgPs" 
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href="https://discord.gg/tqRNbrVgPs" target="_blank" rel="noopener noreferrer">
       Blockey Lacrosse Discord
     </a>
+
   </div>
 
   <p class="footer-credit">
     Made by Sammythewhale
   </p>
 </footer>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
