@@ -3,63 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <title>Blockey Sports Network</title>
-  <link rel="icon" type="image/png" href="../../assets/BSN/BSN-Icon.png" />
+  <link rel="icon" type="image/png" href="../assets/BSN/BSN-Icon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../css/shared.css" />
-  <link rel="stylesheet" href="../../css/home.css" />
+  <link rel="stylesheet" href="../css/shared.css" />
+  <link rel="stylesheet" href="../css/home.css" />
 </head>
 <body>
   <div class="scores-bar">
-      <div class="scores-inner">
-        <span class="scores-label">Scores</span>
-        <div class="scores-scroll">
-          <div class="score-pill">BHL · Team A 3–2 Team B</div>
-          <div class="score-pill">NAMHL · Team C 1–4 Team D</div>
-          <div class="score-pill">JBHL · Team E 2–2 Team F</div>
-        </div>
+    <div class="scores-inner">
+      <label for="league-select" class="scores-label">League</label>
+      <select id="league-select" class="scores-select">
+        <option value="BHL">BHL</option>
+        <option value="NAMHL">NAMHL</option>
+        <option value="JBHL">JBHL</option>
+        <option value="BLL">BLL</option>
+        <option value="JBLL">JBLL</option>
+      </select>
+
+      <div class="scores-scroll">
+        <div class="score-pill">BHL · Team A 3–2 Team B</div>
+        <div class="score-pill">NAMHL · Team C 1–4 Team D</div>
+        <div class="score-pill">JBHL · Team E 2–2 Team F</div>
       </div>
     </div>
+  </div>
 
-    <header class="site-header">
-      <nav class="navbar">
-        <div class="nav-left">
-          <img src="../../assets/BSN/BSN.png" alt="Blockey Sports logo" class="nav-logo" />
-          <span class="nav-title">Blockey Sports Network</span>
-        </div>
-        <div class="nav-links">
-          <a href="./BHL.html" class="nav-link">BHL</a>
-          <a href="./NAMHL.html" class="nav-link">NAMHL</a>
-          <a href="./JBHL.html" class="nav-link">JBHL</a>
-          <a href="./BLL.html" class="nav-link">BLL</a>
-          <a href="./JBLL.html" class="nav-link">JBLL</a>
-        </div>
-      </nav>
-    </header>
-  
   <header class="site-header">
     <nav class="navbar">
       <div class="nav-left">
-        <img src="../../assets/BSN/BSN.png" alt="Blockey Sports logo" class="nav-logo" />
+        <img src="../assets/BSN/BSN.png" alt="Blockey Sports logo" class="nav-logo" />
         <span class="nav-title">Blockey Sports Network</span>
       </div>
 
-      <div class="nav-links">
-        <a href="./home/" class="nav-link nav-link-active">
+      <div class="nav-leagues">
+        <a href="./BHL.html" class="nav-link">BHL</a>
+        <a href="./NAMHL.html" class="nav-link">NAMHL</a>
+        <a href="./JBHL.html" class="nav-link">JBHL</a>
+        <a href="./BLL.html" class="nav-link">BLL</a>
+        <a href="./JBLL.html" class="nav-link">JBLL</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="./home.html" class="nav-link nav-link-active">
           <span class="nav-icon" aria-hidden="true">🏠</span>
           <span class="nav-label">Home</span>
         </a>
 
-        <a href="./info/" class="nav-link">
+        <a href="./info.html" class="nav-link">
           <span class="nav-icon" aria-hidden="true">📋</span>
           <span class="nav-label">Info</span>
         </a>
 
-        <a href="./stats/" class="nav-link">
+        <a href="./stats.html" class="nav-link">
           <span class="nav-icon" aria-hidden="true">📊</span>
           <span class="nav-label">Player Stats</span>
         </a>
 
-        <a href="./teams/" class="nav-link">
+        <a href="./teams.html" class="nav-link">
           <span class="nav-icon" aria-hidden="true">👥</span>
           <span class="nav-label">Teams</span>
         </a>
